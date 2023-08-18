@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    width:100%;
+    height:100vh;
+    font-family: cursive;
+    background: linear-gradient(100deg, #10e7dc , #0074e1);
+    overflow: hidden;
+}
+
+#main-container {
+    position: relative;
+}
+
+/* Styling a center line for the game */
+.centerLine{
+    position:absolute;
+    top:50vh;
+    width:100%;
+    opacity:.7;
+}
+
+/* Style for ball and bar */
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    box-shadow:0 0 40px orange;
+    position: fixed;
+    top: 20px;
+    left: 52.5%;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.barA, .barB {
+    width: 200px;
+    height: 20px;
+    position: fixed;
+    left: 50%;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling barA with a linear gradient background and shadow */
+.barA {
+    background: linear-gradient(#010b68, #004e92);
+    box-shadow:0 7px 15px #004e92;
+    top: 0px;    
+}
+
+/* Styling barB with a linear gradient background and shadow */
+.barB {
+    background: linear-gradient(#aa076b, #61045f);
+    box-shadow:0 -7px 15px #61045f;
+    bottom: 0px;
+}
+
+/* Style of Score for barA */
+.barAScore{
+    width:100%;
+    display:flex;
+    justify-content: left;
+    position:absolute;
+    left:50%;
+    top:42vh;
+    transform:translateX(-50%);
+    opacity:0.4;
+    color:#010b68;
+    font-size:2.5rem;
+}
+
+/* Style of Score for barB */
+.barBScore{
+    width:100%;
+    display:flex;
+    justify-content: right;
+    position:absolute;
+    left:50%;
+    top:50vh;
+    transform:translateX(-50%);
+    opacity:0.5;
+    color:#aa076b;
+    font-size:2.5rem;
+}
